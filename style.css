@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.player-1,
+.player-2 {
+  width: 400px;
+  height: 400px;
+  outline: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.track:hover {
+  border: 1px solid black;
+}
+.track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

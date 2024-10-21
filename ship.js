@@ -3,20 +3,20 @@ class Ship {
     this.length = length;
     this.numberOfHits = numberOfHits;
     this.sunk = sunk;
+    this.isSunk();
   }
   hit() {
     this.numberOfHits++;
+    this.isSunk();
   }
 
   isSunk() {
-    if (ship.length >= ship.numberOfHits) {
+    if (this.numberOfHits >= this.length) {
       this.sunk = true;
-    } else {
+    } else if (this.numberOfHits < this.length) {
       this.sunk = false;
     }
   }
 }
 
-const ship = new Ship();
-
-export { ship, Ship };
+export { Ship };
